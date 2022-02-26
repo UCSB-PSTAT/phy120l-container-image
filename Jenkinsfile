@@ -1,5 +1,8 @@
 pipeline {
     agent none
+    triggers {
+        upstream(upstreamProjects: 'UCSB-PSTAT GitHub/jupyter-base/main', threshold: hudson.model.Result.SUCCESS)
+    }
     environment {
         IMAGE_NAME = 'psy134l'
     }
