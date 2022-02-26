@@ -4,6 +4,6 @@ MAINTAINER LSIT Systems <lsitops@lsit.ucsb.edu>
 
 USER root
 
-RUN mamba install -y -c astropy
+RUN mamba install -y astropy
 
 USER $NB_USER
