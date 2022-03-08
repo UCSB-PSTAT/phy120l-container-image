@@ -4,7 +4,7 @@ MAINTAINER LSIT Systems <lsitops@lsit.ucsb.edu>
 
 USER root
 
-RUN mamba install -y astropy scipy photutils nbgrader 
+RUN mamba install -y astropy scipy photutils nbgrader traitlets 
 
 RUN jupyter nbextension install --sys-prefix --py nbgrader --overwrite && \
     jupyter nbextension enable --sys-prefix --py nbgrader && \
