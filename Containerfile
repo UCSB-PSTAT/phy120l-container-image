@@ -6,4 +6,6 @@ USER root
 
 RUN mamba install -y astropy scipy photutils
 
+RUN pip install batman-package
+
 USER $NB_USER
