@@ -1,4 +1,4 @@
-psy134l
+PHY134l
 =======
 
-Container image for PSY134L
+Container image for PHY134L
