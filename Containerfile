@@ -1,9 +1,9 @@
-FROM ucsb/jupyter-base:latest
+FROM ucsb/scipy-base:latest
 
 MAINTAINER LSIT Systems <lsitops@lsit.ucsb.edu>
 
 USER root
 
-RUN conda install -y astropy scipy photutils batman-package
+RUN conda install -y astropy photutils batman-package
 
 USER $NB_USER
