@@ -4,8 +4,6 @@ MAINTAINER LSIT Systems <lsitops@lsit.ucsb.edu>
 
 USER root
 
-RUN mamba install -y astropy scipy photutils
-
-RUN pip install batman-package
+RUN conda install -y astropy scipy photutils batman-package
 
 USER $NB_USER
